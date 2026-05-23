@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Portfolio Gallery</h1>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/Users/sierra_1/Desktop/website/assets/pinkicecream-thumbnail.jpg"
+                    onclick="openGallery('/Users/sierra_1/Desktop/website/assets/pinkicecream-72dpi.jpg','/Users/sierra_1/Desktop/website/assets/icecream-300dpi.jpg')">
+                    <h3>Project One</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/Users/sierra_1/Desktop/website/assets/mysteryparty-thumbnail.jpg"
+                onclick="openGallery('/Users/sierra_1/Desktop/website/assets/mysteryparty-72dpi.jpg','/Users/sierra_1/Desktop/website/assets/mysteryparty-300dpi.jpg')">
+                <h3>Project Two</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/Users/sierra_1/Desktop/website/assets/venice-thumbnail.jpg"
+                onclick="openGallery('/Users/sierra_1/Desktop/website/assets/venice-72dpi.jpg','/Users/sierra_1/Desktop/website/assets/venice-300dpi.jpg')">
+                <h3>Project Three</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/Users/sierra_1/Desktop/website/assets/tmobilead-thumbnail.jpg"
+                onclick="openGallery('/Users/sierra_1/Desktop/website/assets/tmobilead-72dpi.jpg','/Users/sierra_1/Desktop/website/assets/tmobilead-300dpi.jpg')">
+                <h3>Project Four</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="galleryModal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeGallery()">&times;</span>
+
+        <img id="modalImage">
+
+        <div class="modal-buttons">
+            <button id="smallBtn">72dpi View</button>
+            <button id="largeBtn">300dpi View</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
